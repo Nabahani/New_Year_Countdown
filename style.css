@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    background-color: slateblue;
+    font-family: cursive;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 4px;
+}
+
+.year {
+    font-size: 5em;
+    font-weight: bold;
+}
+
+.time {
+    background-color: rgba(0, 0, 0, .1);
+    width: 100%;
+    height: 120px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+}
+
+.time div {
+    font-size: 2.5rem;
+    margin: 0 15px;
+    letter-spacing: 1px;
+    position: relative;
+    top: -25px;
+    width: 100px;
+}
+
+.time div::before {
+    position: absolute;
+    content: "";
+    bottom: -30px;
+    font-size: .45em;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 35px;
+}
+
+.time #day::before {
+    content: "Days";
+}
+
+.time #hour::before {
+    content: "Hours";
+}
+
+.time #minute::before {
+    content: "Minutes";
+}
+
+.time #second::before {
+    content: "Seconds";
+}
